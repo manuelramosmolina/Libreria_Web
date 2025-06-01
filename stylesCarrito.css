@@ -1,0 +1,300 @@
+/* Estilos generales */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Añadido para evitar scroll horizontal */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease; /* Transición para el color de los enlaces */
+}
+
+a:hover {
+    color: #ff6f61; /* Cambia el color al hacer hover, por ejemplo */
+}
+
+/* Estilos de la cabecera */
+header {
+    background: #007bff;
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll-text 5s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(15%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición para el color de los enlaces de navegación */
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: #ffb3b3; /* Cambia el color al hacer hover o focus */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease; /* Transición para la sombra del input */
+}
+
+.search-form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Añade una sombra al hacer focus */
+}
+
+.search-form button {
+    background: #ffb3b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s ease; /* Transición para el color de fondo del botón */
+}
+
+.search-form button:hover,
+.search-form button:focus {
+    background-color: #e58e8e; /* Cambia el color al hacer hover o focus */
+}
+
+.cart a {
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.cart-count {
+    background-color: #ffb3b3;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #6d7fcc;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer form input[type="email"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.3s ease;
+    border: none;
+    border-radius: 5px;
+}
+
+footer form input[type="email"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+footer .btn-info{
+    transition: background-color 0.3s ease;
+}
+
+footer .btn-info:hover,
+footer .btn-info:focus {
+    background-color: #3498db;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover,
+footer .social-media a:focus {
+    color: #ffb3b3;
+}
+
+.favorite-icons {
+    display: flex;
+    gap: 120px;
+    margin-top: 4px;
+}
+
+.favorite-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f1f1f1;
+    }
+
+    header,
+    footer {
+        background-color: #333333;
+    }
+
+    .hero,
+    .products,
+    .about {
+        background-color: #1e1e1e;
+    }
+
+    .product-item,
+    .result-item {
+        background-color: #2b2b2b;
+        color: #f1f1f1;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-item:hover,
+    .product-item:focus-within,
+    .result-item:hover,
+    .result-item:focus-within{
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .button,
+    .add-to-cart {
+        background-color: #444444;
+        color: #ffffff;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover,
+    .add-to-cart:hover,
+    .button:focus,
+    .add-to-cart:focus {
+        background-color: #555555;
+    }
+
+    .equipo-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .favorite-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
+ 
+ 
+ 
+ 
+ #carrito {
+      position: relative;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    #carrito h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    #lista {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    #lista li {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+    }
+
+    #vaciar {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #vaciar:hover {
+      background-color: #c82333;
+    }
+
+    p {
+      margin: 0.3rem 0;
+    }

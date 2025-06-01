@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="245.12mm" height="203.8mm" version="1.1" viewBox="0 0 245.12 203.8" xmlns="http://www.w3.org/2000/svg">
+ <path d="m126.11 91.195a0.13411 0.87169 0 0 1-0.0392 1.1001 0.13411 0.87169 0 0 1-0.17335-0.07468 0.13411 0.87169 0 0 1-0.0166-1.1241l0.10998 0.49882z" fill-rule="evenodd" stop-color="#000000" stroke-width=".26458" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+ <g transform="matrix(1.1308 0 0 1.1347 7.3568 -13.021)" stroke-width=".23358">
+  <circle cx="102.17" cy="98.595" r="65.9" fill-rule="evenodd" stop-color="#000000" stroke-width=".23358" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+  <ellipse cx="101.66" cy="100.13" rx="85.824" ry="81.226" fill="none" stop-color="#000000" stroke="#000" stroke-width="3.4804" style="font-variation-settings:normal"/>
+  <g fill-rule="evenodd" stroke-width=".23358">
+   <ellipse cx="100.98" cy="136.01" rx="6.0894" ry="3.3768" fill="#797777" stop-color="#000000" stroke="#939393" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+   <ellipse cx="100.13" cy="88.889" rx="32.695" ry="28.608" fill="#fff" stop-color="#000000" style="font-variation-settings:normal"/>
+   <path transform="scale(-1)" d="m-78.847-78.284a8.94 7.4074 0 0 1-4.5343 6.4455 8.94 7.4074 0 0 1-9.0034-0.0928 8.94 7.4074 0 0 1-4.3394-6.537l8.9372 0.18426z" fill="#050000" stop-color="#000000" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+   <path transform="scale(-1)" d="m-104.61-77.832a8.2175 7.4074 0 0 1-4.149 6.4358 8.2175 7.4074 0 0 1-8.2574-0.06303 8.2175 7.4074 0 0 1-4.0275-6.4982l8.2163 0.12544z" fill="#070404" stop-color="#000000" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+  </g>
+  <rect x="57.098" y="77.412" width="87.284" height="56.805" rx=".86707" ry="6.623" fill="#797777" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="15" stroke-width="1.1679" style="paint-order:markers fill stroke"/>
+  <rect x="100.35" y="82.125" width="1.1083" height="47.315" rx="2.1348" ry="2.1274" fill="#040404" stroke="#dbdbdb" stroke-linecap="round" stroke-miterlimit="15" stroke-width="1.1679" style="paint-order:markers fill stroke"/>
+  <g fill="#050000" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="15" stroke-width=".23358">
+   <rect x="142.78" y="103.45" width="8.4291" height="2.2989" rx=".26895" ry=".26802" stroke="#939393" style="paint-order:markers fill stroke"/>
+   <g stroke="#fff">
+    <rect x="142.78" y="103.45" width="8.4291" height="2.2989" rx=".26895" ry=".26802" style="paint-order:markers fill stroke"/>
+    <rect x="142.69" y="106.61" width="8.4291" height="2.2989" rx=".26895" ry=".26802" style="paint-order:markers fill stroke"/>
+    <rect x="142.69" y="109.77" width="8.4291" height="2.2989" rx=".26895" ry=".26802" style="paint-order:markers fill stroke"/>
+    <rect x="52.194" y="103.89" width="8.4291" height="2.2989" rx=".26895" ry=".26802" style="paint-order:markers fill stroke"/>
+    <rect x="52.103" y="107.05" width="8.4291" height="2.2989" rx=".26895" ry=".26802" style="paint-order:markers fill stroke"/>
+    <rect x="52.103" y="110.21" width="8.4291" height="2.2989" rx=".26895" ry=".26802" style="paint-order:markers fill stroke"/>
+   </g>
+  </g>
+ </g>
+</svg>

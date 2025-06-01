@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo_animacion.css">
+</head>
+<body>
+    <a id="arriba"></a>
+    <header class="bg-primary text-white py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid px-0">
+            <!-- Logo y título -->
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <svg id="my-logo" version="1.1" viewBox="0 0 245.12 203.8" xmlns="http://www.w3.org/2000/svg">
+                    <path id="my-path" d="m 126.11,91.195 a 0.13411,0.87169 0 0 1 -0.0392,1.1001 0.13411,0.87169 0 0 1 -0.17335,-0.07468 0.13411,0.87169 0 0 1 -0.0166,-1.1241 l 0.10998,0.49882 z" fill-rule="evenodd" fill="#000" />
+                    <g id="my-group" transform="matrix(1.1308,0,0,1.1347,7.3568,-13.021)">
+                        <circle id="my-circle" cx="102.17" cy="98.595" r="65.9" fill-rule="evenodd" fill="#000" />
+                        <ellipse cx="101.66" cy="100.13" rx="85.824" ry="81.226" fill="none" stroke="#000" stroke-width="3.4804" />
+                        <g fill-rule="evenodd">
+                            <ellipse cx="100.98" cy="136.01" rx="6.0894" ry="3.3768" fill="#797777" />
+                            <ellipse cx="100.13" cy="88.889" rx="32.695" ry="28.608" fill="#fff" />
+                            <path transform="scale(-1)" d="m -78.847,-78.284 a 8.94,7.4074 0 0 1 -4.5343,6.4455 8.94,7.4074 0 0 1 -9.0034,-0.0928 8.94,7.4074 0 0 1 -4.3394,-6.537 l 8.9372,0.18426 z" fill="#050000" />
+                            <path transform="scale(-1)" d="m -104.61,-77.832 a 8.2175,7.4074 0 0 1 -4.149,6.4358 8.2175,7.4074 0 0 1 -8.2574,-0.06303 8.2175,7.4074 0 0 1 -4.0275,-6.4982 l 8.2163,0.12544 z" fill="#070404" />
+                        </g>
+                        <rect x="57.098" y="77.412" width="87.284" height="56.805" rx=".86707" ry="6.623" fill="#797777" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="15" stroke-width="1.1679" />
+                        <rect x="100.35" y="82.125" width="1.1083" height="47.315" rx="2.1348" ry="2.1274" fill="#040404" stroke="#dbdbdb" stroke-linecap="round" stroke-miterlimit="15" stroke-width="1.1679" />
+                        <g fill="#050000" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="15">
+                            <rect x="142.78" y="103.45" width="8.4291" height="2.2989" rx=".26895" ry=".26802" stroke="#939393" />
+                            <g stroke="#fff">
+                                <rect x="142.78" y="103.45" width="8.4291" height="2.2989" rx=".26895" ry=".26802" />
+                                <rect x="142.69" y="106.61" width="8.4291" height="2.2989" rx=".26895" ry=".26802" />
+                                <rect x="142.69" y="109.77" width="8.4291" height="2.2989" rx=".26895" ry=".26802" />
+                                <rect x="52.194" y="103.89" width="8.4291" height="2.2989" rx=".26895" ry=".26802" />
+                                <rect x="52.103" y="107.05" width="8.4291" height="2.2989" rx=".26895" ry=".26802" />
+                                <rect x="52.103" y="110.21" width="8.4291" height="2.2989" rx=".26895" ry=".26802" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <h1 class="ms-2 mb-0 h4">El Rincón de Leer</h1>
+        
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse mt-3 mt-lg-0" id="menuNavegacion">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-white">Inicio</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white"><img src="Iconos/Usuario.png" alt="Usuario" width="30" height="30"></a>
+            </li>
+            <li class="nav-item w-100 w-lg-auto my-2 my-lg-0">
+              <form action="busqueda.html" class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar libros..." aria-label="Buscar">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+              </form>
+            </li>
+            <!-- Carrito -->
+              <li class="nav-item position-relative">
+                <a href="carritoCompra.html" class="nav-link text-white position-relative" id="btn-carrito">
+                  <img src="Iconos/Carrito.png" alt="Carrito" width="30" height="30">
+                  <span id="cant" class="cart-count"></span>
+                </a>
+
+                <!-- Widget del carrito (AHORA DENTRO DEL LI) -->
+                <aside id="carrito">
+                  <h4>Carrito</h4>
+                  <ul id="lista"></ul>
+                  <p>Subtotal: <span id="sub">0.00</span> €</p>
+                  <p>IVA (21 %): <span id="iva">0.00</span> €</p>
+                  <p><strong>Total: <span id="tot">0.00</span> €</strong></p>
+                  <button id="vaciar">Vaciar carrito</button>
+                </aside>
+              </li>
+
+              <!-- FIN carrito -->
+            <li class="nav-item ms-lg-2">
+              <select class="form-select" style="min-width: 140px;" aria-label="Seleccionar idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Quiénes Somos</h2>
+                <p>El Rincón de Leer es una librería en línea que se dedica a ofrecer una extensa y cuidada selección de libros para todos los gustos y edades.
+                    La tienda en línea de El Rincón de Leer proporciona una experiencia de compra intuitiva y cómoda, permitiendo a los usuarios explorar y adquirir
+                    sus libros favoritos desde la comodidad de su hogar. Con una navegación sencilla, descripciones detalladas de cada título y recomendaciones personalizadas 
+                    basadas en los intereses de cada cliente, la librería facilita una experiencia de compra única y adaptada a cada lector.
+                </p>
+            </div>          
+        </section>
+        <p>Diseñado por Freepik <a href="http://www.freepik.es/" target="_blank">www.freepik.es</a></p>
+
+        <section class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="row text-center">
+              <div class="col-md-4 mb-4">
+             <picture>
+                <source srcset="Imagenes/equipoMax.jpg" media="(min-width: 800px)">
+                <source srcset="Imagenes/equipoMed.jpg" media="(min-width: 500px)">
+                <img src="Imagenes/equipoMin.jpg" alt="Equipo de la librería" class="equipo-img">
+              </picture>
+              <p>Diseñado por Freepik <a href="http://www.freepik.es/" target="_blank">www.freepik.es</a></p>
+             </div>
+        </section>
+        <section class="container">
+            <h2>Fotos de la Librería</h2>
+            <div class="row text-center">
+              <div class="col-md-4 mb-4">
+                <picture>
+                  <source srcset="Imagenes/librería1Max.jpg" media="(min-width: 800px)">
+                  <source srcset="Imagenes/librería1Med.jpg" media="(min-width: 500px)">
+                  <img src="Imagenes/librería1Min.jpg" alt="Interior de la librería" class="img-fluid rounded shadow-sm">
+                </picture>
+                <p>Diseñado por Freepik <a href="http://www.freepik.es/" target="_blank">www.freepik.es</a></p>
+              </div>
+              <div class="col-md-4 mb-4">
+                <picture>
+                  <source srcset="Imagenes/librería2Max.jpg" media="(min-width: 800px)">
+                  <source srcset="Imagenes/librería2Med.jpg" media="(min-width: 500px)">
+                  <img src="Imagenes/librería2Min.jpg" alt="Estanterías de libros" class="img-fluid rounded shadow-sm">
+                </picture>
+                <p>Diseñado por Freepik <a href="http://www.freepik.es/" target="_blank">www.freepik.es</a></p>
+              </div>
+              <div class="col-md-4 mb-4">
+                <picture>
+                  <source srcset="Imagenes/librería3Max.jpg" media="(min-width: 800px)">
+                  <source srcset="Imagenes/librería3Med.jpg" media="(min-width: 500px)">
+                  <img src="Imagenes/librería3Min.jpg" alt="Zona de lectura" class="img-fluid rounded shadow-sm">
+                </picture>
+                <p>Diseñado por Freepik <a href="http://www.freepik.es/" target="_blank">www.freepik.es</a></p>
+              </div>
+            </div>
+          </section>
+
+        <section class="container">
+            <h2>Ubicación</h2>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6385.4825437561985!2d-2.4691160000000005!3d36.848672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7075f9253c8cfd%3A0x10423ef17d0655c!2sI.E.S.%20Al-%C3%81ndalus!5e0!3m2!1ses!2sus!4v1738342287362!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Video de Presentación</h2>
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BOJG_I8N25I?cc_load_policy=1" 
+                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contacto</h4>
+                    <p>¿Tienes preguntas? ¡Contáctanos!</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn btn-info">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Síguenos en Redes Sociales</h4>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="contacto.html" class="text-white">Info</a>
+                    </div>
+                    <div class="mt-3">
+                        <p>Finca Santa Isabel, P.º de la Caridad, s/n, 04008 Almería, España</p>
+                        <p>Teléfono: 600 123 456</p>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2025 Librería MRM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+     <!-- Botón subir -->
+    <button id="btn-subir" title="Volver arriba">⬆️</button>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/animacion.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+</html>
+  

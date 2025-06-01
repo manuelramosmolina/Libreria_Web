@@ -1,0 +1,29 @@
+
+#my-logo {
+  width: 100px;
+  height: 100px;
+  animation: pulse 3s ease-in-out forwards;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+#my-logo:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+
+
