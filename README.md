@@ -62,6 +62,7 @@ Libreria_Web/
 ├── stylesCarrito.css
 └── logo_animacion.css
 
+--- 
 ## 🖼️ **Capturas del proyecto**
 
 ### 🏠 Página principal
