@@ -30,6 +30,7 @@ La web está publicada mediante **GitHub Pages**:
 
 ## 📂 **Estructura del proyecto**
 
+```txt
 Libreria_Web/
 │
 ├── Iconos/
@@ -60,10 +61,6 @@ Libreria_Web/
 ├── styles.css
 ├── stylesCarrito.css
 └── logo_animacion.css
-
-
-
----
 
 ## 🖼️ **Capturas del proyecto**
 
