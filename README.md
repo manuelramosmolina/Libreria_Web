@@ -1,79 +1,92 @@
-Este proyecto corresponde a la tarea de Diseño de Interfaces Web (DIW),de la unidad 6 de la 3ª evaluación, donde se presenta una página web interactiva haciendo uso de todo lo aprendido en el curso. 
-*Autor:  Manuel Ramos Molina".
-*IES Al-Ándalus: curso 2024/2025
+﻿# 📚 **Librería Web — El Rincón de Leer**
 
-📚 Libreria_Web
+<img src="Iconos/Logo.png" width="140" alt="Logo de la librería">
 
-Proyecto web estático que simula una librería online. Incluye varias páginas internas, fichas de libros, un carrito de compra y pequeños efectos visuales. El objetivo es practicar maquetación, estructura de proyecto y organización de archivos.
-🚀 Despliegue
+Proyecto desarrollado para la asignatura **Diseño de Interfaces Web (DIW)**, Unidad 6 — 3ª evaluación.  
+Consiste en una página web estática que simula una librería online, aplicando todo lo aprendido durante el curso.
 
-La web está publicada mediante GitHub Pages:
+**Autor:** Manuel Ramos Molina  
+**IES Al‑Ándalus — Curso 2024/2025**
 
-https://manuelramosmolina.github.io/Libreria_Web/ (manuelramosmolina.github.io in Bing)
-🛠️ Tecnologías utilizadas
+---
 
-    HTML5
+## 🚀 **Despliegue**
 
-    CSS3
+La web está publicada mediante **GitHub Pages**:
 
-    JavaScript
+🔗 **https://manuelramosmolina.github.io/Libreria_Web/**
 
-    Git y GitHub
+---
 
-    GitHub Pages para el despliegue
+## 🛠️ **Tecnologías utilizadas**
 
-📂 Estructura del proyecto
+- HTML5  
+- CSS3  
+- JavaScript  
+- Git y GitHub  
+- GitHub Pages (despliegue)
 
-El proyecto está organizado en varias carpetas y archivos:
+---
 
-    Iconos/ — Iconos utilizados en la interfaz
+## 📂 **Estructura del proyecto**
 
-    Imagenes/ — Recursos gráficos y fotografías
+Libreria_Web/
+│
+├── Iconos/               # Iconos de la interfaz
+├── Imagenes/             # Fotografías y recursos gráficos
+├── js/
+│   ├── animacion.js      # Animación del logotipo
+│   ├── main.js           # Funciones generales
+│   └── ShoppingCart.mjs  # Lógica del carrito
+│
+├── index.html            # Página principal
+├── busqueda.html         # Buscador de libros
+├── carritoCompra.html    # Carrito de compra
+├── contacto.html         # Formulario de contacto
+├── ficha-libro01.html
+├── ficha-libro02.html
+├── ficha-libro03.html
+├── ficha-libro04.html
+│
+├── styles.css            # Estilos generales
+├── stylesCarrito.css     # Estilos del carrito
+└── logo_animacion.css    # Animación del logo
 
-    js/
 
-        animacion.js — Animación del logotipo
+---
 
-        main.js — Funciones generales de la web
+## 🖼️ **Capturas del proyecto**
 
-        ShoppingCart.mjs — Lógica del carrito de compra
+### 🏠 Página principal
+<img src="Imagenes/photo-library.jpg" width="500" alt="Captura de la página principal">
 
-    HTML
+### 🛒 Carrito de compra
+<img src="Imagenes/equipoMax.jpg" width="500" alt="Carrito de compra">
 
-        index.html — Página principal
+---
 
-        busqueda.html — Página de búsqueda
+## 📊 **Resultados de rendimiento (Desktop)**
 
-        carritoCompra.html — Carrito de compra
+Pruebas realizadas con **Lighthouse** en modo ordenador.
 
-        contacto.html — Formulario de contacto
+### 🖥️ Vista general del rendimiento
+<img src="rendimiento01.png" width="500" alt="Rendimiento Desktop - Vista general">
 
-        ficha-libro01.html
+### ⚙️ Métricas detalladas
+<img src="rendimiento02.png" width="500" alt="Rendimiento Desktop - Métricas">
 
-        ficha-libro02.html
+---
 
-        ficha-libro03.html
+## 👨‍💻 **Autor**
 
-        ficha-libro04.html
+**Manuel Ramos Molina**  
+Estudiante de Desarrollo de Aplicaciones Web (DAW)  
+IES Al‑Ándalus — Almería
 
-    CSS
+---
 
-        styles.css — Estilos generales
+## 📎 **Licencia**
 
-        logo_animacion.css — Animación del logotipo
+Proyecto académico sin fines comerciales.
 
-        stylesCarrito.css — Estilos del carrito
 
-    ## Optimización (rendimiento, accesibilidad y SEO)
-
-    Este proyecto es estático y se puede optimizar sin cambiar la funcionalidad:
-
-    - **Imágenes**: se han ajustado tamaños y peso de recursos grandes (por ejemplo, el fondo `photo-library.jpg`, las imágenes `equipo*.jpg` y el icono `Iconos/Carrito.png`) para reducir la descarga total.
-    - **SEO**: se han añadido metadescripciones y títulos más descriptivos en las páginas HTML.
-    - **Accesibilidad / CLS**: se han añadido atributos `width`/`height` en imágenes clave para evitar saltos de layout.
-    - **Render-blocking**: se añade `preconnect` a `cdn.jsdelivr.net` y `defer` al script de Bootstrap.
-
-    ### Caché del navegador (cabeceras)
-
-    - En **GitHub Pages** no puedes configurar fácilmente cabeceras `Cache-Control` por archivo (depende del CDN/servidor). Por eso, la optimización de caché es limitada.
-    - Si despliegas en un servidor **Apache**, puedes usar el fichero [.htaccess](.htaccess) incluido para cachear CSS/JS/imagenes durante 1 año y revalidar HTML.
