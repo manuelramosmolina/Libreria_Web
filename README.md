@@ -32,25 +32,35 @@ La web está publicada mediante **GitHub Pages**:
 
 Libreria_Web/
 │
-├── Iconos/               # Iconos de la interfaz
-├── Imagenes/             # Fotografías y recursos gráficos
-├── js/
-│   ├── animacion.js      # Animación del logotipo
-│   ├── main.js           # Funciones generales
-│   └── ShoppingCart.mjs  # Lógica del carrito
+├── Iconos/                 # Iconos de la interfaz
+│   ├── Logo.png
+│   ├── Carrito.png
+│   └── ...
 │
-├── index.html            # Página principal
-├── busqueda.html         # Buscador de libros
-├── carritoCompra.html    # Carrito de compra
-├── contacto.html         # Formulario de contacto
+├── Imagenes/               # Fotografías y recursos gráficos
+│   ├── photo-library.jpg
+│   ├── equipoMax.jpg
+│   ├── rendimiento01.png
+│   ├── rendimiento02.png
+│   └── ...
+│
+├── js/
+│   ├── animacion.js        # Animación del logotipo
+│   ├── main.js             # Funciones generales
+│   └── ShoppingCart.mjs    # Lógica del carrito
+│
+├── index.html              # Página principal
+├── busqueda.html           # Buscador de libros
+├── carritoCompra.html      # Carrito de compra
+├── contacto.html           # Formulario de contacto
 ├── ficha-libro01.html
 ├── ficha-libro02.html
 ├── ficha-libro03.html
 ├── ficha-libro04.html
 │
-├── styles.css            # Estilos generales
-├── stylesCarrito.css     # Estilos del carrito
-└── logo_animacion.css    # Animación del logo
+├── styles.css              # Estilos generales
+├── stylesCarrito.css       # Estilos del carrito
+└── logo_animacion.css      # Animación del logo
 
 
 ---
@@ -58,10 +68,10 @@ Libreria_Web/
 ## 🖼️ **Capturas del proyecto**
 
 ### 🏠 Página principal
-<img src="Imagenes/photo-library.jpg" width="500" alt="Captura de la página principal">
+<img src="Imagenes/home.png" width="500" alt="Captura de la página principal">
 
 ### 🛒 Carrito de compra
-<img src="Imagenes/equipoMax.jpg" width="500" alt="Carrito de compra">
+<img src="Imagenes/carrito.png" width="500" alt="Carrito de compra">
 
 ---
 
@@ -70,10 +80,10 @@ Libreria_Web/
 Pruebas realizadas con **Lighthouse** en modo ordenador.
 
 ### 🖥️ Vista general del rendimiento
-<img src="rendimiento01.png" width="500" alt="Rendimiento Desktop - Vista general">
+<img src="Imagenes/rendimiento01.pngrendimiento01.png" width="500" alt="Rendimiento Desktop - Vista general">
 
 ### ⚙️ Métricas detalladas
-<img src="rendimiento02.png" width="500" alt="Rendimiento Desktop - Métricas">
+<img src="Imagenes/rendimiento02.png" width="500" alt="Rendimiento Desktop - Métricas">
 
 ---
 
