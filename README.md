@@ -32,35 +32,35 @@ La web está publicada mediante **GitHub Pages**:
 
 Libreria_Web/
 │
-├── Iconos/                 # Iconos de la interfaz
+├── Iconos/
 │   ├── Logo.png
-│   ├── Carrito.png
-│   └── ...
+│   └── Carrito.png
 │
-├── Imagenes/               # Fotografías y recursos gráficos
-│   ├── photo-library.jpg
-│   ├── equipoMax.jpg
+├── Imagenes/
+│   ├── home.png
+│   ├── carrito.png
 │   ├── rendimiento01.png
 │   ├── rendimiento02.png
 │   └── ...
 │
 ├── js/
-│   ├── animacion.js        # Animación del logotipo
-│   ├── main.js             # Funciones generales
-│   └── ShoppingCart.mjs    # Lógica del carrito
+│   ├── animacion.js
+│   ├── main.js
+│   └── ShoppingCart.mjs
 │
-├── index.html              # Página principal
-├── busqueda.html           # Buscador de libros
-├── carritoCompra.html      # Carrito de compra
-├── contacto.html           # Formulario de contacto
+├── index.html
+├── busqueda.html
+├── carritoCompra.html
+├── contacto.html
 ├── ficha-libro01.html
 ├── ficha-libro02.html
 ├── ficha-libro03.html
 ├── ficha-libro04.html
 │
-├── styles.css              # Estilos generales
-├── stylesCarrito.css       # Estilos del carrito
-└── logo_animacion.css      # Animación del logo
+├── styles.css
+├── stylesCarrito.css
+└── logo_animacion.css
+
 
 
 ---
@@ -80,7 +80,7 @@ Libreria_Web/
 Pruebas realizadas con **Lighthouse** en modo ordenador.
 
 ### 🖥️ Vista general del rendimiento
-<img src="Imagenes/rendimiento01.pngrendimiento01.png" width="500" alt="Rendimiento Desktop - Vista general">
+<img src="Imagenes/rendimiento01.png" width="500" alt="Rendimiento Desktop - Vista general">
 
 ### ⚙️ Métricas detalladas
 <img src="Imagenes/rendimiento02.png" width="500" alt="Rendimiento Desktop - Métricas">
