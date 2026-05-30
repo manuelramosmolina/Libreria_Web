@@ -19,16 +19,37 @@ function renderCart() {
   for (const [name, { qty, price }] of cart.cart) {
     lista.appendChild(generateCartLiText(name, qty, price));
   }
+
+  // Mostrar/ocultar mensaje vacío
+  const emptyMsg = document.querySelector('#empty-cart-msg');
+  if (emptyMsg) {
+    if (cart.totalQty === 0) {
+      emptyMsg.style.display = 'block';
+    } else {
+      emptyMsg.style.display = 'none';
+    }
+  }
 }
 
 // Función de ayuda que define el estilo y distribución de los elementos
 function generateCartLiText(name, qty, price) {
   return htmlToElement(
-    `<li>
-            ${qty} × ${name} — ${(qty * price).toFixed(2)} €
-            <button class="btn-add-line" data-name="${name}" data-price="${price}" aria-label="Sumar uno">+</button>
-            <button class="btn-sub-line" data-name="${name}" aria-label="Restar uno">−</button>
-            <button class="btn-del-line" data-name="${name}" aria-label="Eliminar">✕</button>
+    `<li class="cart-item-row">
+            <div class="cart-item-info">
+              <span class="cart-item-name">${qty} × ${name}</span>
+              <span class="cart-item-price">${(qty * price).toFixed(2)} €</span>
+            </div>
+            <div class="cart-item-actions">
+              <button class="btn-cart btn-cart-sub" data-name="${name}" aria-label="Restar uno" title="Restar">
+                <i class="bi bi-dash"></i>
+              </button>
+              <button class="btn-cart btn-cart-add" data-name="${name}" data-price="${price}" aria-label="Sumar uno" title="Añadir">
+                <i class="bi bi-plus"></i>
+              </button>
+              <button class="btn-cart btn-cart-del" data-name="${name}" aria-label="Eliminar" title="Eliminar">
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
         </li>
       `);
 }
@@ -61,23 +82,24 @@ Array.from(document.querySelectorAll('.catalogo')).map(
 
 // 6) Botones para incrementar el carrito
 document.querySelector('#lista').addEventListener('click', (e) => {
-  const btn = e.target;
+  const btn = e.target.closest('button');
+  if (!btn) return;
 
   // +1 unidad
-  if (btn.matches('.btn-add-line')) {
+  if (btn.matches('.btn-cart-add')) {
     const name = btn.dataset.name;
     const price = Number(btn.dataset.price);     // viene del data-price del botón
     cart.add(name, price);                       // añade 1
   }
 
   // −1 unidad
-  else if (btn.matches('.btn-sub-line')) {
+  else if (btn.matches('.btn-cart-sub')) {
     const name = btn.dataset.name;
     cart.reduce(name);                           // resta 1
   }
 
   // eliminar toda la línea
-  else if (btn.matches('.btn-del-line')) {
+  else if (btn.matches('.btn-cart-del')) {
     const name = btn.dataset.name;
     cart.remove(name);
   }

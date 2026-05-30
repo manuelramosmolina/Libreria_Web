@@ -12,9 +12,9 @@ export default class ShoppingCart {
       this.cart      = this.#load();         // Map<string,{qty,price,data}>
     }
   
-    /* ╔════════════════════════════════╗
-       ║  Persistencia localStorage     ║
-       ╚════════════════════════════════╝ */
+    /* 
+      Persistencia localStorage
+*/
     #load() {
       const raw = localStorage.getItem(this.key);
       return raw ? new Map(JSON.parse(raw)) : new Map();
@@ -24,9 +24,9 @@ export default class ShoppingCart {
       localStorage.setItem(this.key, JSON.stringify([...this.cart]));
     }
   
-    /* ╔════════════════════════════════╗
-       ║  Getters «read‑only»           ║
-       ╚════════════════════════════════╝ */
+    /* 
+      Getters «read‑only» 
+     */
     /** Cantidad total de unidades en el carrito */
     get totalQty() {
       let sum = 0;
@@ -56,9 +56,9 @@ export default class ShoppingCart {
       return Object.fromEntries(this.cart);
     }
   
-    /* ╔════════════════════════════════╗
-       ║  Mutadores CRUD                ║
-       ╚════════════════════════════════╝ */
+    /*
+    Mutadores CRUD
+       
     /**
      * Añade o incrementa un producto
      * @param {string}  name              Identificador único
